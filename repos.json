@@ -1,24 +1,24 @@
 [
   
     {
-          "full_name": "yearn/iearn-finance",
-          "name": "iearn-finance"
-      },
-      {
-          "full_name": "yearn/yearn-sdk",
-          "name": "yearn-sdk"
-      },
-      {
-          "full_name": "yearn/yearn-security",
-          "name": "yearn-security"
-      },
-      {
           "full_name": "yearn/yearn-finance",
           "name": "yearn-finance"
       },
       {
-          "full_name": "yearn/yearn-assets",
-          "name": "yearn-assets"
+          "full_name": "yearn/yearn-finance-v3",
+          "name": "yearn-finance-v3"
+      },
+      {
+          "full_name": "yearn/yearn-sdk",
+          "name": "yearn-sdk"
+      }, 
+      {
+          "full_name": "yearn/yearn-watch",
+          "name": "yearn-watch"
+      },
+      {
+          "full_name": "yearn/yearn-comms",
+          "name": "yearn-comms"
       },
       {
           "full_name": "yearn/keep3r-jobs",
@@ -49,24 +49,12 @@
           "name": "yearn-lens"
       },
       {
-          "full_name": "yearn/ychad-audit",
-          "name": "ychad-audit"
-      },
-      {
-          "full_name": "yearn/ve-template",
-          "name": "ve-template"
+          "full_name": "yearn/iearn-finance",
+          "name": "iearn-finance"
       },
       {
           "full_name": "yearn/yearn-pm",
           "name": "yearn-pm"
-      },
-      {
-          "full_name": "yearn/yearn-data",
-          "name": "yearn-data"
-      },
-      {
-          "full_name": "yearn/yearn-subgraph",
-          "name": "yearn-subgraph"
       },
       {
           "full_name": "yearn/yearn-api",
