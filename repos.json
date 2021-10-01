@@ -44,10 +44,6 @@
           "name": "yearn-lens"
       },
       {
-          "full_name": "yearn/iearn-finance",
-          "name": "iearn-finance"
-      },
-      {
           "full_name": "yearn/yearn-pm",
           "name": "yearn-pm"
       },
