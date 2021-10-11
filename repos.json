@@ -52,16 +52,8 @@
           "name": "yearn-api"
       },
       {
-        "full_name": "yearn/yearn-watch",
-        "name": "yearn-watch"
-      },
-      {
         "full_name": "yearn/yearn-meta",
         "name": "yearn-meta"
-      },
-      {
-        "full_name": "yearn/yearn-comms",
-        "name": "yearn-comms"
       },
       {
         "full_name": "yearn/brownie-strategy-mix",
