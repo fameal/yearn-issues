@@ -24,10 +24,6 @@
           "name": "yearn-vaults"
       },
       {
-          "full_name": "yearn/yearn-docs",
-          "name": "yearn-docs"
-      },
-      {
           "full_name": "yearn/yearn-vaults-v2-subgraph",
           "name": "yearn-vaults-v2-subgraph"
       },
