@@ -60,6 +60,10 @@
         "name": "brownie-wrapper-mix"
       },
       {
+        "full_name": "yearn/yearn-marketing",
+        "name": "marketing"
+      },
+      {
         "full_name": "yearn/YIPS",
         "name": "YIPS"
       },
