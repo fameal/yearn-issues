@@ -106,10 +106,6 @@ async function fetchRepoIssues(repo) {
             span.className = 'badge ml-1';
             span.style = `background-color: #${label.color};`;
             span.textContent = label.name;
-            // if (label.name === 'good first issue') {
-            //     shouldAppend = true;
-            // }
-
             labelDiv.appendChild(span);
             itemDiv.appendChild(labelDiv);
         }
