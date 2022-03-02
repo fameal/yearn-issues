@@ -8,6 +8,10 @@
           "name": "yearn-finance-v3"
       },
       {
+        "full_name": "yearn/yearn-marketing",
+        "name": "yearn-marketing"
+      },
+      {
           "full_name": "yearn/yearn-sdk",
           "name": "yearn-sdk"
       },
@@ -58,10 +62,6 @@
       {
         "full_name": "yearn/brownie-wrapper-mix",
         "name": "brownie-wrapper-mix"
-      },
-      {
-        "full_name": "yearn/yearn-marketing",
-        "name": "yearn-marketing"
       },
       {
         "full_name": "yearn/YIPS",
