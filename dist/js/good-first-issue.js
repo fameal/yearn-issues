@@ -1,79 +1,3 @@
-const   REPOS = [
-    {
-        "full_name": "yearn/yearn-watch",
-        "name": "yearn-watch"
-    },
-    {
-        "full_name": "yearn/yearn-finance-v3",
-        "name": "yearn-finance-v3"
-    },
-    {
-      "full_name": "yearn/yearn-marketing",
-      "name": "yearn-marketing"
-    },
-    {
-        "full_name": "yearn/yearn-sdk",
-        "name": "yearn-sdk"
-    },
-    {
-        "full_name": "yearn/yearn-comms",
-        "name": "yearn-comms"
-    },
-    {
-        "full_name": "yearn/keep3r-jobs",
-        "name": "keep3r-jobs"
-    },
-    {
-        "full_name": "yearn/yearn-vaults",
-        "name": "yearn-vaults"
-    },
-    {
-        "full_name": "yearn/yearn-vaults-v2-subgraph",
-        "name": "yearn-vaults-v2-subgraph"
-    },
-    {
-        "full_name": "yearn/yearn-exporter",
-        "name": "yearn-exporter"
-    },
-    {
-        "full_name": "yearn/yearn-devdocs",
-        "name": "yearn-devdocs"
-    },
-    {
-        "full_name": "yearn/yearn-lens",
-        "name": "yearn-lens"
-    },
-    {
-        "full_name": "yearn/yearn-pm",
-        "name": "yearn-pm"
-    },
-    {
-        "full_name": "yearn/yearn-api",
-        "name": "yearn-api"
-    },
-    {
-      "full_name": "yearn/yearn-meta",
-      "name": "yearn-meta"
-    },
-    {
-      "full_name": "yearn/brownie-strategy-mix",
-      "name": "brownie-strategy-mix"
-    },
-    {
-      "full_name": "yearn/brownie-wrapper-mix",
-      "name": "brownie-wrapper-mix"
-    },
-    {
-      "full_name": "yearn/YIPS",
-      "name": "YIPS"
-    },
-    {
-      "full_name": "yearn/yearn-simulations",
-      "name": "yearn-simulations"
-    }
-    
-]
-
 function fixDate(date) {
 	return date.slice(0, date.indexOf('T'))
 }
@@ -143,7 +67,7 @@ async function fetchRepoIssues(repo) {
     let issues = await issueRes.json();
 
     issues = issues.filter((i) => !i.pull_request);
-
+    issues = issues.filter((i) => (i?.labels || []).find(l => l.name === 'good first issue'));
     if (issues.length === 0) {
         return;
     }
@@ -182,18 +106,18 @@ async function fetchRepoIssues(repo) {
             span.className = 'badge ml-1';
             span.style = `background-color: #${label.color};`;
             span.textContent = label.name;
+            // if (label.name === 'good first issue') {
+            //     shouldAppend = true;
+            // }
 
             labelDiv.appendChild(span);
-
             itemDiv.appendChild(labelDiv);
         }
 
-        /* Probably done better in CSS... */
         const small = document.createElement('small');
         small.className = 'd-block text-muted mt-n1';
         small.textContent = `#${issue.number} opened on ${fixDate(issue.created_at)} by ${issue.user.login}`;
         itemDiv.appendChild(small);
-
         listItemDiv.appendChild(itemDiv);
 
         const issueCommentsLink = document.createElement('a');
@@ -205,7 +129,6 @@ async function fetchRepoIssues(repo) {
 
         issueCommentsLink.appendChild(createCommentSVG());
         issueCommentsLink.appendChild(document.createTextNode(issue.comments));
-
         listItemDiv.appendChild(issueCommentsLink);
         issuesDiv.appendChild(listItemDiv);
     }
