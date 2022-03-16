@@ -8,6 +8,14 @@
           "name": "yearn-finance-v3"
       },
       {
+        "full_name": "yearn/yearn-vaults-descriptions",
+        "name": "yearn-vaults-descriptions"
+      },
+      {
+        "full_name": "yearn/yearn-web-lib",
+        "name": "yearn-web-lib"
+      },
+      {
         "full_name": "yearn/yearn-marketing",
         "name": "yearn-marketing"
       },
