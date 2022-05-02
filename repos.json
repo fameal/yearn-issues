@@ -42,6 +42,10 @@
   {
       "full_name": "yearn/yearn-exporter",
       "name": "yearn-exporter"
+  },  
+  {
+    "full_name": "yearn-DATA-Analytics",
+    "name": "yearn-DATA-Analytics"
   },
   {
       "full_name": "yearn/yearn-devdocs",
