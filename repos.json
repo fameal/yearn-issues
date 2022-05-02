@@ -60,6 +60,10 @@
           "name": "yearn-api"
       },
       {
+          "full_name": "yearn-DATA-Analytics",
+          "name": "yearn-DATA-Analytics"
+      },
+      {
         "full_name": "yearn/yearn-meta",
         "name": "yearn-meta"
       },
