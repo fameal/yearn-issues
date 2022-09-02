@@ -28,8 +28,8 @@
         "name": "web-template"
       },
       {
-        "full_name": "yearn/yearn-data-sync",
-        "name": "yearn-data-sync"
+        "full_name": "yearn/ySync",
+        "name": "ySync"
       },
       {
         "full_name": "yearn/yBuyback",
@@ -64,8 +64,8 @@
           "name": "yearn-exporter"
       },  
       {
-        "full_name": "yearn-DATA-Analytics",
-        "name": "yearn-DATA-Analytics"
+        "full_name": "yearn-data-analytics",
+        "name": "yearn-data-analytics"
       },
       {
           "full_name": "yearn/yearn-devdocs",
