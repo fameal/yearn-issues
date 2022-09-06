@@ -88,10 +88,6 @@
           "name": "yearn-data-analytics"
       },
       {
-        "full_name": "yearn/yearn-meta",
-        "name": "yearn-meta"
-      },
-      {
         "full_name": "yearn/brownie-strategy-mix",
         "name": "brownie-strategy-mix"
       },
