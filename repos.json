@@ -64,7 +64,7 @@
           "name": "yearn-exporter"
       },  
       {
-        "full_name": "ydata",
+        "full_name": "yearn/ydata",
         "name": "ydata"
       },
       {
