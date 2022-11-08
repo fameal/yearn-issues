@@ -64,8 +64,8 @@
           "name": "yearn-exporter"
       },  
       {
-        "full_name": "yearn-data-analytics",
-        "name": "yearn-data-analytics"
+        "full_name": "ydata",
+        "name": "ydata"
       },
       {
           "full_name": "yearn/yearn-devdocs",
@@ -82,10 +82,6 @@
       {
           "full_name": "yearn/yearn-api",
           "name": "yearn-api"
-      },
-      {
-          "full_name": "yearn-data-analytics",
-          "name": "yearn-data-analytics"
       },
       {
         "full_name": "yearn/brownie-strategy-mix",

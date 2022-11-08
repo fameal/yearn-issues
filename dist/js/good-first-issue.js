@@ -64,9 +64,7 @@ function createCommentSVG() {
 
 async function fetchRepoIssues(repo) {
     const issueRes = await fetch(`https://api.github.com/repos/${repo.full_name}/issues`);
-    let issues = await issueRes.json();
-
-    issues = issueRes.ok 
+    let issues = issueRes.status === 200
         ? await issueRes.json()
         : []
 
